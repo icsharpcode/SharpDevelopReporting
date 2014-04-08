@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<package xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<metadata xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+		<id>AvalonEdit</id>
+		<version>4.4.0.9727</version>
+		<authors>Peter Forstmeier</authors>
+		<owners>SharpDevelop</owners>
+		<licenseUrl>http://opensource.org/licenses/MIT</licenseUrl>
+		<projectUrl>https://github.com/icsharpcode/SharpDevelopReporting/</projectUrl>
+		<iconUrl>http://community.sharpdevelop.net/blogs/mattward/SharpDevelop.png</iconUrl>
+		<requireLicenseAcceptance>false</requireLicenseAcceptance>
+		<description>ADD DESCRIPTION HERE</description>
+		<summary>SharpDevelop Reports is the WPF-based text reporting solution used in SharpDevelop</summary>
+		<releaseNotes>WHATS NEW IN THIS RELEASE HERE</releaseNotes>
+		<language>en-US</language>
+		<tags>WPF Report Reporting Runtime SharpDevelop SDR SharpDevelopReporting</tags>
+  </metadata>
+	<files>
+		<file src="lib\Net35\*.*" target="lib\Net35" />
+		<file src="lib\Net40\*.*" target="lib\Net40" />
+		<file src="..\..\..\..\..\Libraries\AvalonEdit\ICSharpCode.AvalonEdit\**\*.cs" target="src" />
+	</files>
+</package>

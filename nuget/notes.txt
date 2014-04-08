@@ -1,0 +1,7 @@
+Build Process
+
+1. Copy the following pre-built files to this location:
+
+...tbd
+
+2. Run buildpackage.cmd
