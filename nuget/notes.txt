@@ -1,7 +1,35 @@
 Build Process
+=============
 
 1. Copy the following pre-built files to this location:
 
-...tbd
+    lib\net45
+
+Do not copy any Irony or PdfSharp files.
+These are available as NuGet packages so do not need be included.
+
+2. Update the sdr.nuspec with the new version and release information.
+
+If you want to test a pre-release version change the version so the latest digit contains a string:
+
+   1.0.1-alpha
+   1.0.1-alpha.2
+   1.0.1-beta
+   1.0.1-beta.2
 
 2. Run buildpackage.cmd
+
+
+Publishing Process
+==================
+
+1. Ensure that you have configured your api key for nuget.org using a command line similar to:
+
+    nuget setapikey 4003d786-cc37-4004-bfdf-c4f3e8ef9b3a -Source https://www.nuget.org/api/v2/
+
+Your apikey is available from https://www.nuget.org/account
+
+2. Make sure the only .nupkg file in the same containing deploy.cmd is the one you want to publish.
+
+3. Run deploy.cmd
+

@@ -1,1 +1,2 @@
-nuget.exe pack sdr.nuspec -Symbols
+nuget.exe pack sdr.nuspec
+
