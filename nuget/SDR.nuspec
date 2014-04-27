@@ -2,22 +2,22 @@
 <package xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<metadata xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
 		<id>SharpDevelop.Reporting</id>
-		<version>4.4.9727-beta</version>
+		<version>5.0.0.4306-beta</version>
 		<authors>Peter Forstmeier</authors>
 		<owners>SharpDevelop</owners>
 		<licenseUrl>http://opensource.org/licenses/MIT</licenseUrl>
 		<projectUrl>https://github.com/icsharpcode/SharpDevelopReporting/</projectUrl>
 		<iconUrl>http://community.sharpdevelop.net/blogs/mattward/SharpDevelop.png</iconUrl>
 		<requireLicenseAcceptance>false</requireLicenseAcceptance>
-		<description>ADD DESCRIPTION HERE</description>
-		<summary>SharpDevelop Reports is the WPF-based text reporting solution used in SharpDevelop</summary>
-		<releaseNotes>WHATS NEW IN THIS RELEASE HERE</releaseNotes>
+		<description>SharpDevelop Reports comes with a WPF-based reports designer and runtime that can be freely included in your applications</description>
+		<summary>SharpDevelop Reports is the WPF-based reporting solution used in SharpDevelop</summary>
+		<releaseNotes>Version 5 is rearchitected for better programmability and performance</releaseNotes>
 		<language>en-US</language>
 		<tags>WPF Report Reporting Runtime SharpDevelop SDR SharpDevelopReporting</tags>
 		<dependencies>
 			<dependency id="Irony" version="0.9.0" />
 			<dependency id="Irony.Interpreter" version="0.9.0" />
-			<dependency id="PdfSharp" version="1.3" />
+			<dependency id="PdfSharp" version="1.32.3057" />
 		</dependencies>
 	</metadata>
 	<files>
