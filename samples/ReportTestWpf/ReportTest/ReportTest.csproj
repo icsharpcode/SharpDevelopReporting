@@ -44,9 +44,9 @@
     <DefineConstants>TRACE</DefineConstants>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="ICSharpCode.Reporting, Version=5.0.0.4306, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="ICSharpCode.Reporting, Version=5.0.0.4340, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\SharpDevelop.Reporting.5.0.0.4306-beta\lib\Net45\ICSharpCode.Reporting.dll</HintPath>
+      <HintPath>..\packages\SharpDevelop.Reporting.5.0.0.4340-beta\lib\Net45\ICSharpCode.Reporting.dll</HintPath>
     </Reference>
     <Reference Include="Irony, Version=1.0.0.0, Culture=neutral, PublicKeyToken=ca48ace7223ead47, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
