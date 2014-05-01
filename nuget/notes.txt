@@ -25,7 +25,7 @@ Publishing Process
 
 1. Ensure that you have configured your api key for nuget.org using a command line similar to:
 
-    nuget setapikey 4003d786-cc37-4004-bfdf-c4f3e8ef9b3a -Source https://www.nuget.org/api/v2/
+    nuget setapikey 4003d786-cc37-4004-bfdf-c4f3e8ef9b3a
 
 Your apikey is available from https://www.nuget.org/account
 

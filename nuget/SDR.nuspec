@@ -2,16 +2,16 @@
 <package xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<metadata xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
 		<id>SharpDevelop.Reporting</id>
-		<version>5.0.0.4306-beta</version>
+		<version>5.0.0.4340-beta</version>
 		<authors>Peter Forstmeier</authors>
 		<owners>SharpDevelop</owners>
 		<licenseUrl>http://opensource.org/licenses/MIT</licenseUrl>
 		<projectUrl>https://github.com/icsharpcode/SharpDevelopReporting/</projectUrl>
 		<iconUrl>http://community.sharpdevelop.net/blogs/mattward/SharpDevelop.png</iconUrl>
 		<requireLicenseAcceptance>false</requireLicenseAcceptance>
-		<description>SharpDevelop Reports comes with a WPF-based reports designer and runtime that can be freely included in your applications</description>
+		<description>SharpDevelop Reports comes with a WPF-based reports designer and runtime that can be freely included in your applications. Version 5 is rearchitected for better programmability and performance</description>
 		<summary>SharpDevelop Reports is the WPF-based reporting solution used in SharpDevelop</summary>
-		<releaseNotes>Version 5 is rearchitected for better programmability and performance</releaseNotes>
+		<releaseNotes>Pdf Export supports streams</releaseNotes>
 		<language>en-US</language>
 		<tags>WPF Report Reporting Runtime SharpDevelop SDR SharpDevelopReporting</tags>
 		<dependencies>
