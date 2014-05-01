@@ -7,4 +7,4 @@ This folder contains the following samples:
 
 * ReportTestWpf: a WPF application showing various reports (including export to PDF)
 * WebAppMvc: an ASP.NET MVC application showing how to render a report as PDF and send to the client (HomeController.cs)
-* ReportTestWpf: an ASP.NET Web Forms application showing how to render a report as PDF and send to the client (Default.aspx.cs)
+* WebAppWebForms: an ASP.NET Web Forms application showing how to render a report as PDF and send to the client (Default.aspx.cs)
