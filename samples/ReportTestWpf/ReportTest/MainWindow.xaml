@@ -21,6 +21,15 @@
 		/>
 	
 		<StackPanel Grid.Row="2" Grid.Column="0" Background="Brown" Margin="5,10,5,10" >
+			<TextBlock>Search Criteria</TextBlock>
+			<DockPanel>
+				<TextBlock Margin="0 0 10 0" DockPanel.Dock="Left">Firstname like </TextBlock>
+				<TextBox x:Name="Firstname" />
+			</DockPanel>
+			<DockPanel>
+				<TextBlock Margin="0 0 10 0" DockPanel.Dock="Left">RandomInt = </TextBlock>
+				<TextBox x:Name="randomInt" />
+			</DockPanel>
 			<Button Content="GraphicsContainer" Click="Button_Graphics"></Button>
 			<Button Content="Plain" Click="Button_Plain"></Button>
 			<Button Content="Small" Click="Button_Small"></Button>

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.IO;
+using System.Linq;
 using System.Reflection;
 using System.Windows;
 
@@ -46,7 +47,9 @@ namespace ReportTest
 		{
 			var stream = LoadSmallResource();
 			var cl = new ContributorsList();
-			var cc = cl.SmallContributorCollection;
+			int? iRandomInt = ParseRandomInt();
+			var cc = cl.SmallContributorCollection
+				.Where(a => (!iRandomInt.HasValue || (a.RandomInt == iRandomInt.Value)) && a.Firstname.Contains(Firstname.Text));
 			
 			var rf = new ReportingFactory();
 			var reportCreator = rf.ReportCreator (stream,cc);
@@ -62,10 +65,14 @@ namespace ReportTest
 			var stream = LoadListResource();
 			
 			var cl = new ContributorsList();
-			var cc = cl.ContributorCollection;
+			int? iRandomInt = ParseRandomInt();
+			var cc = cl.ContributorCollection
+				.Where(a => (!iRandomInt.HasValue || (a.RandomInt == iRandomInt.Value)) && a.Firstname.Contains(Firstname.Text));
 			
 			var rf = new ReportingFactory();
 			var reportCreator = rf.ReportCreator (stream,cc);
+			rf.ReportModel.ReportSettings.ParameterCollection.Add(new BasicParameter("Firstname", Firstname.Text));
+			rf.ReportModel.ReportSettings.ParameterCollection.Add(new BasicParameter("RandomInt", iRandomInt.ToString()));
 			reportCreator.BuildExportList();
 			var previewViewModel = new PreviewViewModel (rf.ReportModel.ReportSettings,reportCreator.Pages);
 			viewer.SetBinding(previewViewModel);
@@ -78,7 +85,9 @@ namespace ReportTest
 			var stream = LoadGroupedResource();
 			
 			var cl = new ContributorsList();
-			var cc = cl.ContributorCollection;
+			int? iRandomInt = ParseRandomInt();
+			var cc = cl.ContributorCollection
+				.Where(a => (!iRandomInt.HasValue || (a.RandomInt == iRandomInt.Value)) && a.Firstname.Contains(Firstname.Text));
 			
 			var rf = new ReportingFactory();
 			var reportCreator = rf.ReportCreator (stream,cc);
@@ -92,7 +101,9 @@ namespace ReportTest
 			var stream = LoadGroupedResource();
 			
 			var cl = new ContributorsList();
-			var cc = cl.ContributorCollection;
+			int? iRandomInt = ParseRandomInt();
+			var cc = cl.ContributorCollection
+				.Where(a => (!iRandomInt.HasValue || (a.RandomInt == iRandomInt.Value)) && a.Firstname.Contains(Firstname.Text));
 			
 			var rf = new ReportingFactory();
 			var reportCreator = rf.ReportCreator (stream,cc);
@@ -121,7 +132,9 @@ namespace ReportTest
 			var stream = LoadListResource();
 			
 			var cl = new ContributorsList();
-			var cc = cl.ContributorCollection;
+			int? iRandomInt = ParseRandomInt();
+			var cc = cl.ContributorCollection
+				.Where(a => (!iRandomInt.HasValue || (a.RandomInt == iRandomInt.Value)) && a.Firstname.Contains(Firstname.Text));
 			
 			var rf = new ReportingFactory();
 			var reportCreator = rf.ReportCreator (stream,cc);
@@ -168,5 +181,10 @@ namespace ReportTest
 			return stream;
 		}
 	
+		int? ParseRandomInt()
+		{
+			int value;
+			return int.TryParse(randomInt.Text, out value) ? value : (int?)null;
+		}
 	}
 }
