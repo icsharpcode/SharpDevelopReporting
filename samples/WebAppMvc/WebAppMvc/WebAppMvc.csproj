@@ -42,8 +42,9 @@
     <Reference Include="Antlr3.Runtime">
       <HintPath>..\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
     </Reference>
-    <Reference Include="ICSharpCode.Reporting">
-      <HintPath>..\packages\SharpDevelop.Reporting.5.0.0.4340-beta\lib\Net45\ICSharpCode.Reporting.dll</HintPath>
+    <Reference Include="ICSharpCode.Reporting, Version=5.0.0.4755, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\SharpDevelop.Reporting.5.0.0.4755\lib\Net45\ICSharpCode.Reporting.dll</HintPath>
     </Reference>
     <Reference Include="Irony">
       <HintPath>..\packages\Irony.0.9.0\lib\net45\Irony.dll</HintPath>

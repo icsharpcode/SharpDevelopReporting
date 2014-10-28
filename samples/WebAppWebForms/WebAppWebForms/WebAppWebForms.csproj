@@ -38,8 +38,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="ICSharpCode.Reporting">
-      <HintPath>..\packages\SharpDevelop.Reporting.5.0.0.4340-beta\lib\Net45\ICSharpCode.Reporting.dll</HintPath>
+    <Reference Include="ICSharpCode.Reporting, Version=5.0.0.4755, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\SharpDevelop.Reporting.5.0.0.4755\lib\Net45\ICSharpCode.Reporting.dll</HintPath>
     </Reference>
     <Reference Include="Irony">
       <HintPath>..\packages\Irony.0.9.0\lib\net45\Irony.dll</HintPath>
